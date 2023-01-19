@@ -13,10 +13,10 @@ public class telaMenu extends javax.swing.JFrame {
     /**
      * Creates new form telaMenu
      */
-    public telaMenu() {
-        this.setExtendedState(MAXIMIZED_BOTH);
-        this.setUndecorated(true);
+    public telaMenu() {        
         initComponents();
+        this.setExtendedState(MAXIMIZED_BOTH);
+        
     }
 
     /**
