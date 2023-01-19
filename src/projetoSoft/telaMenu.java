@@ -14,6 +14,8 @@ public class telaMenu extends javax.swing.JFrame {
      * Creates new form telaMenu
      */
     public telaMenu() {
+        this.setExtendedState(MAXIMIZED_BOTH);
+        this.setUndecorated(true);
         initComponents();
     }
 
@@ -29,6 +31,7 @@ public class telaMenu extends javax.swing.JFrame {
         voltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusCycleRoot(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowActivated(java.awt.event.WindowEvent evt) {
                 formWindowActivated(evt);

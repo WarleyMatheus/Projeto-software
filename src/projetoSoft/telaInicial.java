@@ -69,6 +69,11 @@ public class telaInicial extends javax.swing.JFrame {
                 logButtonMousePressed(evt);
             }
         });
+        logButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -173,11 +178,17 @@ public class telaInicial extends javax.swing.JFrame {
             //System.exit(0);
             new telaMenu().setVisible(true);
             telaInicial.super.setVisible(false);
+            this.dispose();
+           
         }
         else{
             JOptionPane.showMessageDialog(null, "acesso negado");
         }
     }//GEN-LAST:event_logButtonMousePressed
+
+    private void logButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_logButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
